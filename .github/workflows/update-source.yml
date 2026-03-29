@@ -1,10 +1,8 @@
 name: Update Source
 
 on:
-  schedule:
-    - cron: '0 */6 * * *'  # Every 6 hours
   workflow_dispatch:        # Manual trigger
-  repository_dispatch:      # Allow external triggers
+  repository_dispatch:      # Triggered by app repos on release
     types: [update-source]
 
 permissions:
