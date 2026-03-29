@@ -1,0 +1,23 @@
+{
+  "source": {
+    "name": "Zen's Apps",
+    "identifier": "com.zen.source",
+    "website": "https://github.com/obus-schmobus",
+    "subtitle": "Custom apps for LiveContainer",
+    "description": "Source for sideloaded apps built via GitHub Actions CI."
+  },
+  "apps": [
+    {
+      "repo": "obus-schmobus/tidal-app",
+      "assetPattern": "*.ipa",
+      "bundleIdentifier": "com.tidalapp.flutter",
+      "name": "Tidal Downloader",
+      "developerName": "Zen",
+      "subtitle": "Download and play music from Tidal",
+      "localizedDescription": "A Flutter iOS app that embeds CPython to run tiddl (Tidal music downloader) on-device. Features streaming playback with varispeed, library management, playlist support, and search with album art.",
+      "iconURL": "https://raw.githubusercontent.com/obus-schmobus/app-source/main/icons/tidal-app.png",
+      "tintColor": "#00FFFF",
+      "category": "music"
+    }
+  ]
+}
