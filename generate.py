@@ -9,17 +9,27 @@ compatible apps.json.
 
 import json
 import fnmatch
+import os
 import sys
 from pathlib import Path
 from urllib.request import urlopen, Request
 from urllib.error import HTTPError
 
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+
+
+def _api_headers() -> dict:
+    headers = {"Accept": "application/vnd.github+json",
+               "User-Agent": "app-source-generator"}
+    if GITHUB_TOKEN:
+        headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
+    return headers
+
 
 def fetch_latest_release(repo: str) -> dict | None:
     """Fetch the latest GitHub release for a repo."""
     url = f"https://api.github.com/repos/{repo}/releases/latest"
-    req = Request(url, headers={"Accept": "application/vnd.github+json",
-                                "User-Agent": "app-source-generator"})
+    req = Request(url, headers=_api_headers())
     try:
         with urlopen(req, timeout=15) as resp:
             return json.loads(resp.read())
@@ -31,8 +41,7 @@ def fetch_latest_release(repo: str) -> dict | None:
 def fetch_all_releases(repo: str) -> list[dict]:
     """Fetch all GitHub releases for a repo (newest first)."""
     url = f"https://api.github.com/repos/{repo}/releases?per_page=50"
-    req = Request(url, headers={"Accept": "application/vnd.github+json",
-                                "User-Agent": "app-source-generator"})
+    req = Request(url, headers=_api_headers())
     try:
         with urlopen(req, timeout=15) as resp:
             return json.loads(resp.read())
