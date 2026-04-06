@@ -2,22 +2,34 @@
   "source": {
     "name": "Zen's Apps",
     "identifier": "com.zen.source",
-    "website": "https://github.com/obus-schmobus",
+    "website": "https://github.com/oct-obus",
     "subtitle": "Custom apps for LiveContainer",
     "description": "Source for sideloaded apps built via GitHub Actions CI."
   },
   "apps": [
     {
-      "repo": "obus-schmobus/tidal-app",
+      "repo": "oct-obus/tidal-app",
       "assetPattern": "*.ipa",
       "bundleIdentifier": "com.tidalapp.flutter",
       "name": "Tidal Downloader",
       "developerName": "Zen",
       "subtitle": "Download and play music from Tidal",
       "localizedDescription": "A Flutter iOS app that embeds CPython to run tiddl (Tidal music downloader) on-device. Features streaming playback with varispeed, library management, playlist support, and search with album art.",
-      "iconURL": "https://raw.githubusercontent.com/obus-schmobus/app-source/main/icons/tidal-app.png",
+      "iconURL": "https://raw.githubusercontent.com/oct-obus/app-source/main/icons/tidal-app.png",
       "tintColor": "#00FFFF",
       "category": "music"
+    },
+    {
+      "repo": "oct-obus/fritzbox-tools",
+      "assetPattern": "*.ipa",
+      "bundleIdentifier": "com.fritztools.fritz_tools",
+      "name": "Fritz!Box Tools",
+      "developerName": "Zen",
+      "subtitle": "Device list and mesh pairing for Fritz!Box",
+      "localizedDescription": "WebView app with a local Dart proxy server for managing Fritz!Box routers. Features PBKDF2/MD5 authentication, device listing, and remote mesh pairing via WPS.",
+      "iconURL": "https://raw.githubusercontent.com/oct-obus/app-source/main/icons/fritzbox-tools.png",
+      "tintColor": "#CC0000",
+      "category": "utilities"
     }
   ]
 }

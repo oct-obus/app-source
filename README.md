@@ -7,7 +7,7 @@ AltStore/LiveContainer compatible source for sideloaded apps.
 Use this URL as a source in LiveContainer:
 
 ```
-https://raw.githubusercontent.com/obus-schmobus/app-source/main/apps.json
+https://raw.githubusercontent.com/oct-obus/app-source/main/apps.json
 ```
 
 ## Apps
