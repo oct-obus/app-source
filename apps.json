@@ -10,10 +10,10 @@
       "bundleIdentifier": "com.tidalapp.flutter",
       "developerName": "Zen",
       "subtitle": "Download and play music from Tidal",
-      "version": "1.0.0",
-      "versionDate": "2026-04-07T16:56:50Z",
-      "versionDescription": "Initial release on new repo. Flutter iOS Tidal downloader with embedded CPython.",
-      "downloadURL": "https://github.com/oct-obus/tidal-app/releases/download/v1.0.0/TidalApp.ipa",
+      "version": "1.2.1",
+      "versionDate": "2026-04-07T17:03:29Z",
+      "versionDescription": "Re-uploaded to new repo (oct-obus). Flutter iOS Tidal downloader with embedded CPython.",
+      "downloadURL": "https://github.com/oct-obus/tidal-app/releases/download/v1.2.1/TidalApp.ipa",
       "localizedDescription": "A Flutter iOS app that embeds CPython to run tiddl (Tidal music downloader) on-device. Features streaming playback with varispeed, library management, playlist support, and search with album art.",
       "iconURL": "https://raw.githubusercontent.com/oct-obus/app-source/main/icons/tidal-app.png",
       "tintColor": "#00FFFF",
@@ -22,10 +22,10 @@
       "screenshotURLs": [],
       "versions": [
         {
-          "version": "1.0.0",
-          "date": "2026-04-07T16:56:50Z",
-          "localizedDescription": "Initial release on new repo. Flutter iOS Tidal downloader with embedded CPython.",
-          "downloadURL": "https://github.com/oct-obus/tidal-app/releases/download/v1.0.0/TidalApp.ipa",
+          "version": "1.2.1",
+          "date": "2026-04-07T17:03:29Z",
+          "localizedDescription": "Re-uploaded to new repo (oct-obus). Flutter iOS Tidal downloader with embedded CPython.",
+          "downloadURL": "https://github.com/oct-obus/tidal-app/releases/download/v1.2.1/TidalApp.ipa",
           "size": 6839059
         }
       ]
