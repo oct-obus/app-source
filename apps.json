@@ -7,7 +7,7 @@
   "apps": [
     {
       "name": "Tidal Downloader",
-      "bundleIdentifier": "com.tidalapp.flutter",
+      "bundleIdentifier": "com.obus.tidalApp",
       "developerName": "Zen",
       "subtitle": "Download and play music from Tidal",
       "version": "1.2.1",
