@@ -22,7 +22,7 @@
     {
       "repo": "oct-obus/fritzbox-tools",
       "assetPattern": "*.ipa",
-      "bundleIdentifier": "com.fritztools.fritz_tools",
+      "bundleIdentifier": "com.fritztools.fritzTools",
       "name": "Fritz!Box Tools",
       "developerName": "Zen",
       "subtitle": "Device list and mesh pairing for Fritz!Box",
