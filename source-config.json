@@ -10,7 +10,7 @@
     {
       "repo": "oct-obus/tidal-app",
       "assetPattern": "*.ipa",
-      "bundleIdentifier": "com.tidalapp.flutter",
+      "bundleIdentifier": "com.obus.tidalApp",
       "name": "Tidal Downloader",
       "developerName": "Zen",
       "subtitle": "Download and play music from Tidal",
