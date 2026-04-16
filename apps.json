@@ -11,8 +11,8 @@
       "developerName": "Zen",
       "subtitle": "Download and play music from Tidal",
       "version": "1.4.0",
-      "versionDate": "2026-04-13T23:40:00Z",
-      "versionDescription": "YouTube/SoundCloud download, HLS AAC, cookies support, webkit-jsi anti-throttle, Spotify link resolver, speed diagnostics.",
+      "versionDate": "2026-04-13T23:40:08Z",
+      "versionDescription": "Changes since v1.2.1\n\nYouTube & SoundCloud downloads\n• YouTube audio download via yt-dlp (direct HTTP + HLS)\n• SoundCloud audio download with HLS AAC 160kbps support\n• Format selection (best/high/medium/low quality)\n• Metadata tagging + cover art embedding via mutagen\n\nYouTube Premium cookies\n• Import Netscape cookies.txt for YouTube Premium 256kbps AAC\n• Cookie status + management in Settings\n\nAnti-throttle (webkit-jsi)\n• Bundled yt-dlp-apple-webkit-jsi plugin for YouTube n-param decryption\n• Explicit ios,mweb player client config\n• n-param throttle detection with URL heuristic\n• Real-time download speed display (KB/s) in progress UI\n• Download stats in result JSON (bytes, time, avg speed, protocol)\n\nSpotify/YouTube link → Tidal search\n• Paste a Spotify track or YouTube link in the search bar\n• Resolves title + artist via oEmbed APIs\n• Preview modal with \"Search on Tidal\" button\n\nOther\n• Custom app icon in CI builds\n• WKWebView login (replaced SFSafariViewController)\n• Playlist preview fix, mounted guard\n• CI trigger changed to release + workflow_dispatch only",
       "downloadURL": "https://github.com/oct-obus/tidal-app/releases/download/v1.4.0/TidalApp.ipa",
       "localizedDescription": "A Flutter iOS app that embeds CPython to run tiddl (Tidal music downloader) on-device. Features streaming playback with varispeed, library management, playlist support, and search with album art.",
       "iconURL": "https://raw.githubusercontent.com/oct-obus/app-source/main/icons/tidal-app.png",
@@ -23,8 +23,8 @@
       "versions": [
         {
           "version": "1.4.0",
-          "date": "2026-04-13T23:40:00Z",
-          "localizedDescription": "YouTube/SoundCloud download, HLS AAC, cookies support, webkit-jsi anti-throttle, Spotify link resolver, speed diagnostics.",
+          "date": "2026-04-13T23:40:08Z",
+          "localizedDescription": "Changes since v1.2.1\n\nYouTube & SoundCloud downloads\n• YouTube audio download via yt-dlp (direct HTTP + HLS)\n• SoundCloud audio download with HLS AAC 160kbps support\n• Format selection (best/high/medium/low quality)\n• Metadata tagging + cover art embedding via mutagen\n\nYouTube Premium cookies\n• Import Netscape cookies.txt for YouTube Premium 256kbps AAC\n• Cookie status + management in Settings\n\nAnti-throttle (webkit-jsi)\n• Bundled yt-dlp-apple-webkit-jsi plugin for YouTube n-param decryption\n• Explicit ios,mweb player client config\n• n-param throttle detection with URL heuristic\n• Real-time download speed display (KB/s) in progress UI\n• Download stats in result JSON (bytes, time, avg speed, protocol)\n\nSpotify/YouTube link → Tidal search\n• Paste a Spotify track or YouTube link in the search bar\n• Resolves title + artist via oEmbed APIs\n• Preview modal with \"Search on Tidal\" button\n\nOther\n• Custom app icon in CI builds\n• WKWebView login (replaced SFSafariViewController)\n• Playlist preview fix, mounted guard\n• CI trigger changed to release + workflow_dispatch only",
           "downloadURL": "https://github.com/oct-obus/tidal-app/releases/download/v1.4.0/TidalApp.ipa",
           "size": 24290023
         },
@@ -129,6 +129,31 @@
           "localizedDescription": "Full Changelog: https://github.com/oct-obus/fritzbox-tools/commits/v1.0.0",
           "downloadURL": "https://github.com/oct-obus/fritzbox-tools/releases/download/v1.0.0/FritzTools.ipa",
           "size": 22131944
+        }
+      ]
+    },
+    {
+      "name": "CR Deck Viewer",
+      "bundleIdentifier": "com.zen.crDeckViewer",
+      "developerName": "Zen",
+      "subtitle": "Clash Royale deck builder and viewer",
+      "version": "0.21.0",
+      "versionDate": "2026-04-16T23:50:10Z",
+      "versionDescription": "Unsigned IPA from \"ios26-liquid-glass\" branch.\nVersion: 0.21.0 (build 21)\nBuilt: 2026-04-16 23:50 UTC\nCommit: 8584644f543cea3416be5164b2455835be3a91e2",
+      "downloadURL": "https://github.com/oct-obus/cr-deck-viewer-app/releases/download/latest-ios26-liquid-glass/CRDeckViewer-unsigned.ipa",
+      "localizedDescription": "React Native iOS app for building, viewing, and saving Clash Royale decks. Features deck stats (average elixir, cycle cost), deck naming by win condition, URL import/export, and offline saved deck management.",
+      "iconURL": "https://raw.githubusercontent.com/oct-obus/app-source/main/icons/cr-deck-viewer.png",
+      "tintColor": "#5B2C8E",
+      "category": "games",
+      "size": 12532025,
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "0.21.0",
+          "date": "2026-04-16T23:50:10Z",
+          "localizedDescription": "Unsigned IPA from \"ios26-liquid-glass\" branch.\nVersion: 0.21.0 (build 21)\nBuilt: 2026-04-16 23:50 UTC\nCommit: 8584644f543cea3416be5164b2455835be3a91e2",
+          "downloadURL": "https://github.com/oct-obus/cr-deck-viewer-app/releases/download/latest-ios26-liquid-glass/CRDeckViewer-unsigned.ipa",
+          "size": 12532025
         }
       ]
     }

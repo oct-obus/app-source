@@ -30,6 +30,20 @@
       "iconURL": "https://raw.githubusercontent.com/oct-obus/app-source/main/icons/fritzbox-tools.png",
       "tintColor": "#CC0000",
       "category": "utilities"
+    },
+    {
+      "repo": "oct-obus/cr-deck-viewer-app",
+      "assetPattern": "*.ipa",
+      "includePrerelease": true,
+      "versionRegex": "Version:\\s*(\\S+)",
+      "bundleIdentifier": "org.reactjs.native.example.CRDeckViewer",
+      "name": "CR Deck Viewer",
+      "developerName": "Zen",
+      "subtitle": "Clash Royale deck builder and viewer",
+      "localizedDescription": "React Native iOS app for building, viewing, and saving Clash Royale decks. Features deck stats (average elixir, cycle cost), deck naming by win condition, URL import/export, and offline saved deck management.",
+      "iconURL": "https://raw.githubusercontent.com/oct-obus/app-source/main/icons/cr-deck-viewer.png",
+      "tintColor": "#5B2C8E",
+      "category": "games"
     }
   ]
 }

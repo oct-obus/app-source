@@ -10,6 +10,7 @@ compatible apps.json.
 import json
 import fnmatch
 import os
+import re
 import sys
 from pathlib import Path
 from urllib.request import urlopen, Request
@@ -70,10 +71,27 @@ def clean_description(body: str) -> str:
     return text.strip()
 
 
+def extract_version(release: dict, version_regex: str | None = None) -> str:
+    """Extract version string from tag name, or from release body via regex."""
+    tag = release["tag_name"].lstrip("v")
+    # If the tag looks like a semver, use it directly
+    if re.match(r"^\d+\.\d+", tag):
+        return tag
+    # Otherwise try to extract from release body using a regex
+    if version_regex and release.get("body"):
+        m = re.search(version_regex, release["body"])
+        if m:
+            return m.group(1)
+    # Fallback to tag
+    return tag
+
+
 def build_app_entry(app_cfg: dict) -> dict | None:
     """Build one AltStore app entry from config + GitHub releases."""
     repo = app_cfg["repo"]
     pattern = app_cfg.get("assetPattern", "*.ipa")
+    include_pre = app_cfg.get("includePrerelease", False)
+    version_regex = app_cfg.get("versionRegex")
     print(f"  Fetching releases for {repo}...")
 
     releases = fetch_all_releases(repo)
@@ -84,13 +102,15 @@ def build_app_entry(app_cfg: dict) -> dict | None:
     versions = []
     latest_entry = None
     for release in releases:
-        if release.get("draft") or release.get("prerelease"):
+        if release.get("draft"):
+            continue
+        if release.get("prerelease") and not include_pre:
             continue
         asset = find_asset(release, pattern)
         if not asset:
             continue
         entry = {
-            "version": release["tag_name"].lstrip("v"),
+            "version": extract_version(release, version_regex),
             "date": release["published_at"],
             "localizedDescription": clean_description(release.get("body", "")),
             "downloadURL": asset["browser_download_url"],
