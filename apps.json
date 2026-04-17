@@ -10,17 +10,24 @@
       "bundleIdentifier": "com.obus.tidalApp",
       "developerName": "Zen",
       "subtitle": "Download and play music from Tidal",
-      "version": "1.4.0",
-      "versionDate": "2026-04-13T23:40:08Z",
-      "versionDescription": "Changes since v1.2.1\n\nYouTube & SoundCloud downloads\n• YouTube audio download via yt-dlp (direct HTTP + HLS)\n• SoundCloud audio download with HLS AAC 160kbps support\n• Format selection (best/high/medium/low quality)\n• Metadata tagging + cover art embedding via mutagen\n\nYouTube Premium cookies\n• Import Netscape cookies.txt for YouTube Premium 256kbps AAC\n• Cookie status + management in Settings\n\nAnti-throttle (webkit-jsi)\n• Bundled yt-dlp-apple-webkit-jsi plugin for YouTube n-param decryption\n• Explicit ios,mweb player client config\n• n-param throttle detection with URL heuristic\n• Real-time download speed display (KB/s) in progress UI\n• Download stats in result JSON (bytes, time, avg speed, protocol)\n\nSpotify/YouTube link → Tidal search\n• Paste a Spotify track or YouTube link in the search bar\n• Resolves title + artist via oEmbed APIs\n• Preview modal with \"Search on Tidal\" button\n\nOther\n• Custom app icon in CI builds\n• WKWebView login (replaced SFSafariViewController)\n• Playlist preview fix, mounted guard\n• CI trigger changed to release + workflow_dispatch only",
-      "downloadURL": "https://github.com/oct-obus/tidal-app/releases/download/v1.4.0/TidalApp.ipa",
+      "version": "1.5.0",
+      "versionDate": "2026-04-17T00:38:59Z",
+      "versionDescription": "What's New\n\nDebug Logging & Error Reporting\n• Actual yt-dlp error messages now shown in the snackbar (no more generic \"Could not fetch info\")\n• New Debug Log section in Settings — captures all yt-dlp operations, cookie status, errors\n• Log viewer with Copy and Share (iOS share sheet) buttons for easy export\n\nSkip Forward/Backward\n• Skip buttons (⏪ ⏩) in the now playing bar\n• Configurable skip duration: 5s, 10s (default), 15s, 30s\n• Skip button layout: split, left, or right of play button\n\nLock Screen Controls\n• Play/pause and skip forward/backward now work from the lock screen and Control Center\n• Skip intervals sync with in-app settings\n\nCookie Fix\n• Fixed Netscape cookies.txt domain flag mismatch that caused yt-dlp to crash when loading cookies\n• YouTube login + cookie extraction should now work correctly\n\nFull Changelog\n\"171ab9b\" Debug logging + error propagation\n\"fe1d416\" Skip buttons + layout + lock screen\n\"14d8298\" Share sheet for log export\n\"03b9a31\" Cookie domain flag fix\n\"8270956\" Version bump to 1.5.0",
+      "downloadURL": "https://github.com/oct-obus/tidal-app/releases/download/v1.5.0/TidalApp.ipa",
       "localizedDescription": "A Flutter iOS app that embeds CPython to run tiddl (Tidal music downloader) on-device. Features streaming playback with varispeed, library management, playlist support, and search with album art.",
       "iconURL": "https://raw.githubusercontent.com/oct-obus/app-source/main/icons/tidal-app.png",
       "tintColor": "#00FFFF",
       "category": "music",
-      "size": 24290023,
+      "size": 24313022,
       "screenshotURLs": [],
       "versions": [
+        {
+          "version": "1.5.0",
+          "date": "2026-04-17T00:38:59Z",
+          "localizedDescription": "What's New\n\nDebug Logging & Error Reporting\n• Actual yt-dlp error messages now shown in the snackbar (no more generic \"Could not fetch info\")\n• New Debug Log section in Settings — captures all yt-dlp operations, cookie status, errors\n• Log viewer with Copy and Share (iOS share sheet) buttons for easy export\n\nSkip Forward/Backward\n• Skip buttons (⏪ ⏩) in the now playing bar\n• Configurable skip duration: 5s, 10s (default), 15s, 30s\n• Skip button layout: split, left, or right of play button\n\nLock Screen Controls\n• Play/pause and skip forward/backward now work from the lock screen and Control Center\n• Skip intervals sync with in-app settings\n\nCookie Fix\n• Fixed Netscape cookies.txt domain flag mismatch that caused yt-dlp to crash when loading cookies\n• YouTube login + cookie extraction should now work correctly\n\nFull Changelog\n\"171ab9b\" Debug logging + error propagation\n\"fe1d416\" Skip buttons + layout + lock screen\n\"14d8298\" Share sheet for log export\n\"03b9a31\" Cookie domain flag fix\n\"8270956\" Version bump to 1.5.0",
+          "downloadURL": "https://github.com/oct-obus/tidal-app/releases/download/v1.5.0/TidalApp.ipa",
+          "size": 24313022
+        },
         {
           "version": "1.4.0",
           "date": "2026-04-13T23:40:08Z",
@@ -134,7 +141,7 @@
     },
     {
       "name": "CR Deck Viewer",
-      "bundleIdentifier": "com.zen.crDeckViewer",
+      "bundleIdentifier": "org.reactjs.native.example.CRDeckViewer",
       "developerName": "Zen",
       "subtitle": "Clash Royale deck builder and viewer",
       "version": "0.21.0",
